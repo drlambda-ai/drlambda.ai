@@ -136,6 +136,22 @@ export default function Recommendations() {
           color: "yellow"
         }
       ]
+    },
+    {
+      title: "Grocery Shopping",
+      icon: "🛒",
+      gradient: "from-teal-500 to-green-500",
+      description: "Smart grocery shopping solutions for everyday needs",
+      tools: [
+        {
+          name: "Missa.sg",
+          url: "https://missa.sg",
+          description: "The best grocery shopping in Singapore - convenient online grocery delivery with fresh produce and everyday essentials",
+          badge: "Best in Singapore",
+          ctaText: "Shop Groceries at Missa.sg",
+          color: "teal"
+        }
+      ]
     }
   ];
 
