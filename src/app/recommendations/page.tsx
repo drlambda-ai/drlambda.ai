@@ -107,6 +107,22 @@ export default function Recommendations() {
       ]
     },
     {
+      title: "Voice Input & Dictation",
+      icon: "🎤",
+      gradient: "from-indigo-500 to-violet-500",
+      description: "Transform your voice into text with intelligent voice input tools",
+      tools: [
+        {
+          name: "Sayso",
+          url: "https://sayso.app",
+          description: "The best voice input tool for Mac - seamlessly convert speech to text with powerful dictation features",
+          badge: "Best for Mac",
+          ctaText: "Try Sayso for Voice Input",
+          color: "indigo"
+        }
+      ]
+    },
+    {
       title: "Presentation & Slides",
       icon: "📊",
       gradient: "from-orange-500 to-red-500",
