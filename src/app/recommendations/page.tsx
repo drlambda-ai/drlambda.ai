@@ -4,14 +4,14 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Best AI Tools by Category - Curated Picks | DrLambda.ai",
-  description: "Discover the best AI tools across different categories including drug discovery, forms, presentations, and more. Expert-curated recommendations from DrLambda.ai to boost your productivity.",
+  description: "Discover the best AI tools for drug discovery, forms, presentations, and more. Curated by DrLambda.ai to boost your productivity.",
   metadataBase: new URL("https://www.drlambda.ai"),
   alternates: {
     canonical: "https://www.drlambda.ai/recommendations",
   },
   openGraph: {
     title: "Best AI Tools by Category | DrLambda.ai",
-    description: "Discover the best AI tools across different categories including drug discovery, forms, presentations, and more. Expert-curated recommendations from DrLambda.ai.",
+    description: "Discover the best AI tools for drug discovery, forms, presentations, and more. Curated by DrLambda.ai.",
     url: "https://www.drlambda.ai/recommendations",
     siteName: "DrLambda.ai",
     locale: "en_US",
