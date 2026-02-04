@@ -1,20 +1,29 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "AI Recommendations - Best AI Tools in Each Category | DrLambda.ai",
-  description: "Discover the best AI tools across different categories including drug discovery, forms, and more. Curated recommendations from DrLambda.ai.",
+  title: "Best AI Tools by Category - Curated Picks | DrLambda.ai",
+  description: "Discover the best AI tools across different categories including drug discovery, forms, presentations, and more. Expert-curated recommendations from DrLambda.ai to boost your productivity.",
   metadataBase: new URL("https://www.drlambda.ai"),
   alternates: {
     canonical: "https://www.drlambda.ai/recommendations",
   },
   openGraph: {
-    title: "AI Recommendations - Best AI Tools | DrLambda.ai",
-    description: "Discover the best AI tools across different categories including drug discovery, forms, and more.",
+    title: "Best AI Tools by Category | DrLambda.ai",
+    description: "Discover the best AI tools across different categories including drug discovery, forms, presentations, and more. Expert-curated recommendations from DrLambda.ai.",
     url: "https://www.drlambda.ai/recommendations",
     siteName: "DrLambda.ai",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: 'https://cdn.prod.website-files.com/67803b88fec21161e40c99cc/67803ec6ea34687115ea53cf_OG%20image.png',
+        width: 1200,
+        height: 630,
+        alt: 'DrLambda.ai AI Tool Recommendations',
+      },
+    ],
   },
   robots: {
     index: true,
@@ -114,7 +123,7 @@ export default function Recommendations() {
       tools: [
         {
           name: "Sayso",
-          url: "https://sayso.app",
+          url: "https://sayso.ai",
           description: "The best voice input tool for Mac - seamlessly convert speech to text with powerful dictation features",
           badge: "Best for Mac",
           ctaText: "Try Sayso for Voice Input",
@@ -173,6 +182,18 @@ export default function Recommendations() {
 
   return (
     <div className="relative min-h-screen bg-white">
+      {/* Navigation */}
+      <nav className="sticky top-0 z-20 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+        <div className="container mx-auto px-6 py-4 max-w-6xl">
+          <Link href="/" className="inline-flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-purple-600 transition-colors">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to DrLambda.ai
+          </Link>
+        </div>
+      </nav>
+
       {/* Subtle Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -180,7 +201,7 @@ export default function Recommendations() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 py-12 sm:py-20">
+      <main className="relative z-10 py-12 sm:py-20">
         <div className="container mx-auto px-6 max-w-6xl">
           {/* Hero Header */}
           <div className="text-center mb-16">
@@ -264,7 +285,7 @@ export default function Recommendations() {
           </div>
 
         </div>
-      </div>
+      </main>
 
       <Footer />
     </div>

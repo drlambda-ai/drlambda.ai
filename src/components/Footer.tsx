@@ -37,6 +37,16 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="https://www.chatslide.ai/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
                   href="/recommendations"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"

@@ -6,6 +6,11 @@ import ChatSlideButton from "@/components/ChatSlideButton";
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gray-50">
+      {/* Skip to main content link for accessibility */}
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-purple-600 text-white px-4 py-2 rounded-lg z-50">
+        Skip to main content
+      </a>
+
       {/* Floating Background Images */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[5%] left-[-5%] w-[300px] sm:w-[400px] opacity-15 animate-float-slow">
@@ -35,7 +40,7 @@ export default function Home() {
             width={420}
             height={320}
             className="rounded-xl shadow-2xl transform rotate-[-8deg]"
-            priority
+            loading="lazy"
           />
         </div>
         <div className="absolute bottom-[25%] right-[-8%] w-[300px] sm:w-[400px] opacity-15 animate-float-slow-reverse">
@@ -45,14 +50,14 @@ export default function Home() {
             width={400}
             height={300}
             className="rounded-xl shadow-2xl transform rotate-[18deg]"
-            priority
+            loading="lazy"
           />
         </div>
       </div>
 
       {/* Main Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-6 sm:p-8">
-        <main className="max-w-4xl w-full text-center">
+        <main id="main-content" className="max-w-4xl w-full text-center">
           {/* ChatSlide Logo */}
           <div className="mb-8 sm:mb-12 flex justify-center animate-fade-in">
             <Image
@@ -70,12 +75,13 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 tracking-tight">
               Looking for <span className="text-[#7b3aed]">ChatSlide</span>?
             </h1>
-            <p className="text-base sm:text-lg text-gray-700 mb-3">
+            <h2 className="text-base sm:text-lg text-gray-700 mb-3">
               ChatSlide is DrLambda Inc&apos;s flagship product
-            </p>
+            </h2>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-900 max-w-3xl mx-auto leading-relaxed mb-6">
               🥇 Best AI Slides Tool
             </p>
+            <h3 className="sr-only">Key Features</h3>
             <div className="max-w-2xl mx-auto text-left sm:text-center space-y-2 text-base sm:text-lg text-gray-800">
               <p>✔ Powered by your own knowledge base</p>
               <p>✔ Supports multimodal documents</p>

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "DrLambda.ai - AI-Powered Platform",
-  description: "AI-powered platform for intelligent automation and insights",
+  description: "DrLambda.ai is the parent company of ChatSlide, the best AI slides tool trusted by users in 170 countries. Create professional presentations powered by your own knowledge base.",
   manifest: "/manifest.json",
   metadataBase: new URL("https://www.drlambda.ai"),
   alternates: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "DrLambda.ai - AI-Powered Platform",
-    description: "AI-powered platform for intelligent automation and insights",
+    description: "DrLambda.ai is the parent company of ChatSlide, the best AI slides tool trusted by users in 170 countries. Create professional presentations powered by your own knowledge base.",
     url: "https://www.drlambda.ai",
     siteName: "DrLambda.ai",
     locale: "en_US",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@ChatSlideAI',
     title: "DrLambda.ai - AI-Powered Platform",
-    description: "AI-powered platform for intelligent automation and insights",
+    description: "DrLambda.ai is the parent company of ChatSlide, the best AI slides tool trusted by users in 170 countries. Create professional presentations powered by your own knowledge base.",
     images: ['https://cdn.prod.website-files.com/67803b88fec21161e40c99cc/67803ec6ea34687115ea53cf_OG%20image.png'],
   },
   robots: {
@@ -74,6 +74,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta charSet="utf-8" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-FW9YH27P0H"
           strategy="afterInteractive"
