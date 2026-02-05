@@ -177,6 +177,22 @@ export default function Recommendations() {
           color: "teal"
         }
       ]
+    },
+    {
+      title: "Reviews & Rankings",
+      icon: "🏆",
+      gradient: "from-rose-500 to-orange-500",
+      description: "Curated rankings and reviews of the best products and services",
+      tools: [
+        {
+          name: "BestIn2026.com",
+          url: "https://bestin2026.com",
+          description: "Comprehensive reviews and rankings of the best products and services in 2026 - find top-rated picks across every category",
+          badge: "Best of 2026",
+          ctaText: "Discover the Best in 2026",
+          color: "rose"
+        }
+      ]
     }
   ];
 
