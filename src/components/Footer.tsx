@@ -56,6 +56,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="/sponsors"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Sponsors
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://www.chatslide.ai/affiliate"
                   target="_blank"
                   rel="noopener noreferrer"

@@ -93,6 +93,19 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Sponsors Link */}
+          <div className="mb-6 animate-fade-in-up">
+            <a
+              href="/sponsors"
+              className="inline-flex items-center gap-1.5 text-sm text-gray-500 hover:text-purple-600 transition-colors"
+            >
+              Our Sponsors
+              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+          </div>
+
           {/* CTA Button */}
           <div className="mb-12 sm:mb-16 animate-fade-in-up-delay">
             <Suspense fallback={
