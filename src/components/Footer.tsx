@@ -74,7 +74,17 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://quanl.ai"
+                  href="https://sayso.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  🎤 Sayso
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://howtowingeo.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -84,7 +94,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://howtowingeo.com"
+                  href="https://quanl.ai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
