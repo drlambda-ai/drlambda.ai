@@ -133,7 +133,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-purple-300 hover:text-purple-600 hover:shadow-md transition-all duration-200"
               >
-                🎤 Sayso
+                🎤 SaySo AI
                 <span className="text-xs text-gray-400">Voice AI</span>
               </a>
               <a
