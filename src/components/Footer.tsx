@@ -102,6 +102,16 @@ export default function Footer() {
                   👨🏻‍💻 Quanlai Li
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://openclaudia.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  👩‍💼 Claudia (CMO)
+                </a>
+              </li>
             </ul>
           </div>
 
