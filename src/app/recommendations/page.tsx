@@ -179,6 +179,21 @@ export default function Recommendations() {
       ]
     },
     {
+      title: "Influencer Marketing",
+      icon: "🎯",
+      gradient: "from-pink-500 to-fuchsia-500",
+      description: "AI-powered tools for influencer discovery and creator collaboration",
+      tools: [
+        {
+          name: "CrowdCore",
+          url: "https://crowdcore.com/",
+          description: "AI-powered influencer discovery platform that analyzes video content to find the perfect creators for your brand campaigns",
+          ctaText: "Discover Creators with CrowdCore",
+          color: "pink"
+        }
+      ]
+    },
+    {
       title: "Reviews & Rankings",
       icon: "🏆",
       gradient: "from-rose-500 to-orange-500",
