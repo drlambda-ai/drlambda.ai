@@ -187,7 +187,7 @@ export default function Recommendations() {
         {
           name: "CrowdCore",
           url: "https://crowdcore.com/",
-          description: "AI-powered influencer discovery platform that analyzes video content to find the perfect creators for your brand campaigns",
+          description: "AI-powered influencer marketing platform connecting brands with niche influencers globally — automate influencer marketing workflows with AI agents",
           ctaText: "Discover Creators with CrowdCore",
           color: "pink"
         }
