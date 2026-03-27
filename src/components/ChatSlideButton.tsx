@@ -1,11 +1,12 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
+import { appendReferrer } from "@/utils/chatslide-url";
 
 export default function ChatSlideButton() {
   const searchParams = useSearchParams();
 
-  // Build ChatSlide URL with UTM parameters
+  // Build ChatSlide URL with UTM parameters and original referrer passthrough
   const getChatSlideUrl = () => {
     const params = new URLSearchParams();
 
@@ -17,9 +18,11 @@ export default function ChatSlideButton() {
     });
 
     const queryString = params.toString();
-    return queryString
+    const baseUrl = queryString
       ? `https://chatslide.ai?${queryString}`
       : 'https://chatslide.ai';
+
+    return appendReferrer(baseUrl);
   };
 
   return (

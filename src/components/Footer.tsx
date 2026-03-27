@@ -1,3 +1,5 @@
+import { ChatSlideLink } from "@/components/ChatSlideLink";
+
 export default function Footer() {
   return (
     <footer className="relative z-10 border-t bg-background">
@@ -16,34 +18,19 @@ export default function Footer() {
             <h4 className="text-sm font-semibold">Links</h4>
             <ul className="space-y-2.5">
               <li>
-                <a
-                  href="https://www.chatslide.ai/about"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
+                <ChatSlideLink href="https://www.chatslide.ai/about">
                   About
-                </a>
+                </ChatSlideLink>
               </li>
               <li>
-                <a
-                  href="https://www.chatslide.ai/terms"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
+                <ChatSlideLink href="https://www.chatslide.ai/terms">
                   Terms
-                </a>
+                </ChatSlideLink>
               </li>
               <li>
-                <a
-                  href="https://www.chatslide.ai/privacy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
+                <ChatSlideLink href="https://www.chatslide.ai/privacy">
                   Privacy Policy
-                </a>
+                </ChatSlideLink>
               </li>
               <li>
                 <a
@@ -63,14 +50,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.chatslide.ai/affiliate"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                >
+                <ChatSlideLink href="https://www.chatslide.ai/affiliate">
                   🤝 Affiliate Program
-                </a>
+                </ChatSlideLink>
               </li>
               <li>
                 <a
