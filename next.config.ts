@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         destination: 'https://chatslide.ai/about',
         permanent: true,
       },
+      {
+        source: '/landing',
+        destination: 'https://chatslide.ai/landing?ref=drlambda',
+        permanent: true,
+      },
     ];
   },
 };
