@@ -3,14 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // Catch-all: redirect every path on drlambda.ai (and all subdomains) to chatslide.ai
+      // Subdomains (social, pro, app) need DNS + Vercel domain config first
       {
-        source: '/about',
-        destination: 'https://chatslide.ai/about',
-        permanent: true,
-      },
-      {
-        source: '/landing',
-        destination: 'https://chatslide.ai/landing?ref=drlambda',
+        source: '/:path*',
+        destination: 'https://www.chatslide.ai/:path*',
         permanent: true,
       },
     ];
