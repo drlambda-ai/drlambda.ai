@@ -18,8 +18,11 @@ export const metadata: Metadata = {
   description: "DrLambda.ai is the parent company of ChatSlide, the best AI slides tool trusted by users in 170+ countries and 29 languages.",
   manifest: "/manifest.json",
   metadataBase: new URL("https://www.drlambda.ai"),
+  // Canonical points to chatslide.ai so Google consolidates equity from the
+  // 50+ DR50+ legacy directory backlinks (Crunchbase, AppSumo, YourStory, etc.)
+  // pointing at drlambda.ai/. The landing page itself stays live for branding.
   alternates: {
-    canonical: "https://www.drlambda.ai",
+    canonical: "https://www.chatslide.ai",
   },
   icons: {
     icon: [
@@ -33,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DrLambda.ai - AI-Powered Platform",
     description: "DrLambda.ai is the parent company of ChatSlide, the best AI slides tool trusted by users in 170+ countries and 29 languages.",
-    url: "https://www.drlambda.ai",
+    url: "https://www.chatslide.ai",
     siteName: "DrLambda.ai",
     locale: "en_US",
     type: "website",
