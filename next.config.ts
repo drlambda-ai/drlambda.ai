@@ -6,6 +6,16 @@ const nextConfig: NextConfig = {
       // Native pages kept on drlambda.ai: /recommendations, /sponsors
       // Everything else (including root) 308s to chatslide.ai to consolidate backlink equity.
       {
+        source: '/blog',
+        destination: 'https://www.chatslide.ai/articles',
+        permanent: true,
+      },
+      {
+        source: '/blog/:slug*',
+        destination: 'https://www.chatslide.ai/articles/:slug*',
+        permanent: true,
+      },
+      {
         source: '/',
         destination: 'https://www.chatslide.ai/',
         permanent: true,
